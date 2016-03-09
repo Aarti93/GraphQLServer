@@ -1,0 +1,56 @@
+{
+		"companyName": "QBOP Company",
+		"addresses": [{
+			"city": "Bangalore",
+			"streetAddress": "Green Glen Layout, Bellandur",
+			"region": "Karnataka",
+			"county": "",
+			"postalCode": "560103",
+			"country": "INDIA",
+			"active": "true",
+			"employees": [{
+					"name": "Alice",
+					"id": "123"
+				}, {
+					"name": "Bob",
+					"id": "234"
+				}
+
+			]
+		}, {
+			"city": "mountain view",
+			"streetAddress": "address",
+			"region": "CA",
+			"county": "",
+			"postalCode": "94043",
+			"country": "US",
+			"active": "true",
+			"employees": [{
+					"name": "Alice",
+					"id": "123"
+				}, {
+					"name": "Bob",
+					"id": "234"
+				}
+
+			]
+		}, {
+			"city": "texas",
+			"streetAddress": "address",
+			"region": "TX",
+			"county": "",
+			"postalCode": "94043",
+			"country": "US",
+			"active": "true",
+			"employees": [{
+					"name": "Alice",
+					"id": "123"
+				}, {
+					"name": "Bob",
+					"id": "234"
+				}
+
+			]
+		}]
+	
+}

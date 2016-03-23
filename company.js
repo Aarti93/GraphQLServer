@@ -6,31 +6,46 @@ import {
 } from 'graphql';
 
 let employeeType = new GraphQLObjectType ({
-  name: "employees",
+  name: "employeeType",
   fields: {
     name: {type: GraphQLString},
     id: {type: GraphQLString}
   }
 })
+
 let addressType = new GraphQLObjectType ({
   name: 'address',
   fields: {
+    country: {type: GraphQLString},
+    region: {type: GraphQLString},
     city: {type: GraphQLString},
     streetAddress: {type: GraphQLString},
-    region: {type: GraphQLString},
     county: {type: GraphQLString},
     postalCode: {type: GraphQLString},
-    country: {type: GraphQLString},
-    active: {type: GraphQLString},
-    employees: {type: new GraphQLList (employeeType)}
   }
 });
+
+let contactType = new GraphQLObjectType ({
+  name: 'contactType',
+  fields: {
+    workPhone: {type: GraphQLString}
+  }
+})
+
+let workLocationsType = new GraphQLObjectType ({
+  name: 'workLocationsType',
+  fields: {
+    id: {type: GraphQLString},
+    address: {type: addressType}
+  }
+})
 
 export let companyInfoType = new GraphQLObjectType ({
   name: 'company',
   fields: {
-    id: {type: GraphQLString},
-    companyName: {type: GraphQLString},
-    addresses: {type: new GraphQLList(addressType)}
+    businessName: {type: GraphQLString},
+    businessAddress: {type: addressType},
+    contact: {type: contactType},
+    workLocation: {type: new GraphQLList(workLocationsType)}
   }
 });

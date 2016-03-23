@@ -1,56 +1,37 @@
 {
-		"companyName": "QBOP Company",
-		"addresses": [{
-			"city": "Bangalore",
-			"streetAddress": "Green Glen Layout, Bellandur",
-			"region": "Karnataka",
-			"county": "",
-			"postalCode": "560103",
-			"country": "INDIA",
-			"active": "true",
-			"employees": [{
-					"name": "Alice",
-					"id": "123"
-				}, {
-					"name": "Bob",
-					"id": "234"
-				}
+	"businessName": "QBOP Company",
+	"businessAddress": {
+		"streetAddress": "100 Main Street",
+		"city": "San Francisco",
+		"region": "CA",
+		"country": "US",
+		"postalCode": "94105"
+	},
+	"contact": {
+		"workPhone": "1234567891"
+	},
+	"workLocation": [{
+		"id": "12334",
+		"address": {
+			"city": "San Francisco",
+			"streetAddress": "12345 Broadway Street",
+			"region": "CA",
+			"county": "San Francisco",
+			"postalCode": "94105",
+			"country": "US"
 
-			]
-		}, {
-			"city": "mountain view",
-			"streetAddress": "address",
+		}
+	}, {
+		"id": "d1223ddd",
+		"address": {
+			"city": "San Jose",
+			"streetAddress": "5000 Easy Street",
 			"region": "CA",
 			"county": "",
-			"postalCode": "94043",
-			"country": "US",
-			"active": "true",
-			"employees": [{
-					"name": "Alice",
-					"id": "123"
-				}, {
-					"name": "Bob",
-					"id": "234"
-				}
+			"postalCode": "94123",
+			"country": "US"
 
-			]
-		}, {
-			"city": "texas",
-			"streetAddress": "address",
-			"region": "TX",
-			"county": "",
-			"postalCode": "94043",
-			"country": "US",
-			"active": "true",
-			"employees": [{
-					"name": "Alice",
-					"id": "123"
-				}, {
-					"name": "Bob",
-					"id": "234"
-				}
+		}
+	}]
 
-			]
-		}]
-	
 }

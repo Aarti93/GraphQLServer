@@ -18,15 +18,17 @@ let schema = new GraphQLSchema ({
         args: {
           id: {type: GraphQLString}
         },
-        resolve: (_,args) => {
+        // resolve: (_,args) => {
+        //     let dataClient = new DataClient();
+        //     return dataClient.getCompanyDetails();
+        // }
+        resolve: () => {
             let dataClient = new DataClient();
-            return dataClient.getCompanyDetails("1234567");
+            return dataClient.getCompanyDetails();
         }
       }
 }
 })
 });
-
-
 
 export default schema;
